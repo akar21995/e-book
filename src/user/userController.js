@@ -23,7 +23,7 @@ exports.updateUser = (req, res) => {
 
 exports.deleteUser = (req, res) => {
     const userId = req.params.userId;
-    const createdUser = deleteUser(userId);
+    deleteUser(userId);
     res.status(201).json({ message: "user removed succesfully!" });
 };
 
